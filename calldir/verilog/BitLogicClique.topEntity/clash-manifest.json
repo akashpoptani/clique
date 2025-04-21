@@ -6,7 +6,7 @@
         20,
         20
     ],
-    "hash": "f63d3f18e0fb9f10b6368c2554b9e7f0a7206f82aeb612fe706d3727591aac8b",
+    "hash": "5000d0d0331f2f3aa2fefdbf076a9a0fe915cb7a38f3b149ad2c0d3c290cde6c",
     "dependencies": {
         "transitive": []
     },
@@ -22,7 +22,7 @@
         },
         {
             "name": "topEntity.v",
-            "sha256": "cf189d8016299902ab8e3a73bf63e9dd949e54664a586e448fad93725d7245e0"
+            "sha256": "d39f6151b2fdf6c0bf5b70ea5b7a0a2efbad18064420de3ac85228e06ef51cc9"
         }
     ],
     "top_component": {
@@ -111,6 +111,13 @@
                 "direction": "out",
                 "width": 1,
                 "name": "result_3",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "width": 1,
+                "name": "result_4",
                 "is_clock": false,
                 "type_name": ""
             }

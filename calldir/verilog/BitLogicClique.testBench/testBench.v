@@ -15,7 +15,7 @@ module testBench
   wire  \BitLogicClique.testBench_clk ;
   wire [2:0] z;
   wire [1:0] result_1;
-  wire [3:0] c$ds_app_arg_1;
+  wire [4:0] c$ds_app_arg_1;
   wire  c$result_rec;
   reg [1:0] s_0 = 2'd0;
   wire  f2;
@@ -31,12 +31,14 @@ module testBench
   // ../clique1.hs:11:1-14
   wire  t;
   // ../clique1.hs:11:1-14
+  wire  xorResult;
+  // ../clique1.hs:11:1-14
   wire  common;
-  wire [3:0] result_2;
+  wire [4:0] result_2;
   // ../clique1.hs:39:1-9
   wire  \c$BitLogicClique.testBench_app_arg ;
   wire [19:0] c$vecFlat;
-  wire [15:0] c$vecFlat_0;
+  wire [19:0] c$vecFlat_0;
 
   assign c$ds_app_arg = (s < 2'd3) ? (s + 2'd1) : s;
 
@@ -129,16 +131,17 @@ module testBench
   assign result_1 = (z > 3'd3) ? 2'd3 : (z[0+:2]);
 
   assign c$vecFlat_0 = {{1'b0,   1'b0,   1'b0,
-                         1'b0},   {1'b0,   1'b1,   1'b0,   1'b0},
-                        {1'b1,   1'b0,   1'b1,   1'b0},   {1'b0,
-                                                           1'b0,   1'b0,   1'b0}};
+                         1'b0,   1'b0},   {1'b0,   1'b1,   1'b0,
+                                           1'b0,   1'b0},   {1'b1,   1'b0,   1'b1,
+                                                             1'b0,   1'b0},   {1'b0,   1'b0,   1'b0,
+                                                                               1'b0,   1'b1}};
 
   // index begin
-  wire [3:0] vecArray_0 [0:4-1];
+  wire [4:0] vecArray_0 [0:4-1];
   genvar i_0;
   generate
   for (i_0=0; i_0 < 4; i_0=i_0+1) begin : mk_array_0
-    assign vecArray_0[(4-1)-i_0] = c$vecFlat_0[i_0*4+:4];
+    assign vecArray_0[(4-1)-i_0] = c$vecFlat_0[i_0*5+:5];
   end
   endgenerate
   assign c$ds_app_arg_1 = vecArray_0[($unsigned({{(64-2) {1'b0}},s_0}))];
@@ -188,10 +191,13 @@ module testBench
 
   assign t = c$ds_app_arg_0[0:0];
 
-  assign common = t & (((p ^ q) ^ r) ^ s_1);
+  assign xorResult = ((p ^ q) ^ r) ^ s_1;
+
+  assign common = t & xorResult;
 
   assign result_2 = {common & p,   common & q,
-                     common & r,   common & s_1};
+                     common & r,   common & s_1,
+                     t & (~ xorResult)};
 
   // resetGen begin
   // pragma translate_off

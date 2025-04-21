@@ -18,6 +18,7 @@ module topEntity
     , output wire  result_1
     , output wire  result_2
     , output wire  result_3
+    , output wire  result_4
     );
   // ../clique1.hs:11:1-14
   wire  p;
@@ -30,9 +31,11 @@ module topEntity
   // ../clique1.hs:11:1-14
   wire  t;
   // ../clique1.hs:11:1-14
+  wire  xorResult;
+  // ../clique1.hs:11:1-14
   wire  common;
   wire [4:0] eta;
-  wire [3:0] result;
+  wire [4:0] result;
 
   assign eta = {eta_0,   eta_1,   eta_2,
                 eta_3,   eta_4};
@@ -47,18 +50,22 @@ module topEntity
 
   assign t = eta[0:0];
 
-  assign common = t & (((p ^ q) ^ r) ^ s);
+  assign xorResult = ((p ^ q) ^ r) ^ s;
+
+  assign common = t & xorResult;
 
   assign result = {common & p,   common & q,
-                   common & r,   common & s};
+                   common & r,   common & s,   t & (~ xorResult)};
 
-  assign result_0 = result[3:3];
+  assign result_0 = result[4:4];
 
-  assign result_1 = result[2:2];
+  assign result_1 = result[3:3];
 
-  assign result_2 = result[1:1];
+  assign result_2 = result[2:2];
 
-  assign result_3 = result[0:0];
+  assign result_3 = result[1:1];
+
+  assign result_4 = result[0:0];
 
 
 endmodule
