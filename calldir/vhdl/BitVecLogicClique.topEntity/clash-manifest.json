@@ -1,0 +1,143 @@
+{
+    "components": [
+        "topEntity"
+    ],
+    "flags": [
+        20,
+        20
+    ],
+    "hash": "8a2039a7f4d5de824e76bd500c927a723538ed0bcb4de23a02ccdb549d7d8245",
+    "dependencies": {
+        "transitive": []
+    },
+    "version": "unstable",
+    "files": [
+        {
+            "name": "topEntity.sdc",
+            "sha256": "13d4c1aafcc09a84d81d3b60d513cb901384a10e27e5a5a16572a600f15895f3"
+        },
+        {
+            "name": "BitVecLogicClique_topEntity_types.vhdl",
+            "sha256": "893b051f9d09b68399bd9184a24cdceed0abff979afe81141c678daf6b60eb80"
+        },
+        {
+            "name": "topEntity.vhdl",
+            "sha256": "1b6dc2dd5d0c176bc50c53b9b0169f705bc9488df988e41c26d9c7b6fa039871"
+        }
+    ],
+    "top_component": {
+        "ports_flat": [
+            {
+                "direction": "in",
+                "domain": "System",
+                "width": 1,
+                "name": "clk",
+                "is_clock": true,
+                "type_name": "clk.BitVecLogicClique_topEntity_types.clk_System"
+            },
+            {
+                "direction": "in",
+                "domain": "System",
+                "width": 1,
+                "name": "rst",
+                "is_clock": false,
+                "type_name": "rst.BitVecLogicClique_topEntity_types.rst_System"
+            },
+            {
+                "direction": "in",
+                "domain": "System",
+                "width": 1,
+                "name": "en",
+                "is_clock": false,
+                "type_name": "en.BitVecLogicClique_topEntity_types.en_System"
+            },
+            {
+                "direction": "in",
+                "width": 1,
+                "name": "eta_0",
+                "is_clock": false,
+                "type_name": "std_logic"
+            },
+            {
+                "direction": "in",
+                "width": 1,
+                "name": "eta_1",
+                "is_clock": false,
+                "type_name": "std_logic"
+            },
+            {
+                "direction": "in",
+                "width": 1,
+                "name": "eta_2",
+                "is_clock": false,
+                "type_name": "std_logic"
+            },
+            {
+                "direction": "in",
+                "width": 1,
+                "name": "eta_3",
+                "is_clock": false,
+                "type_name": "std_logic"
+            },
+            {
+                "direction": "in",
+                "width": 1,
+                "name": "eta_4",
+                "is_clock": false,
+                "type_name": "std_logic"
+            },
+            {
+                "direction": "out",
+                "width": 1,
+                "name": "result_0",
+                "is_clock": false,
+                "type_name": "std_logic"
+            },
+            {
+                "direction": "out",
+                "width": 1,
+                "name": "result_1",
+                "is_clock": false,
+                "type_name": "std_logic"
+            },
+            {
+                "direction": "out",
+                "width": 1,
+                "name": "result_2",
+                "is_clock": false,
+                "type_name": "std_logic"
+            },
+            {
+                "direction": "out",
+                "width": 1,
+                "name": "result_3",
+                "is_clock": false,
+                "type_name": "std_logic"
+            }
+        ],
+        "name": "topEntity"
+    },
+    "domains": {
+        "System": {
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_kind": "Asynchronous",
+            "active_edge": "Rising",
+            "reset_polarity": "ActiveHigh"
+        },
+        "XilinxSystem": {
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_kind": "Synchronous",
+            "active_edge": "Rising",
+            "reset_polarity": "ActiveHigh"
+        },
+        "IntelSystem": {
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_kind": "Asynchronous",
+            "active_edge": "Rising",
+            "reset_polarity": "ActiveHigh"
+        }
+    }
+}

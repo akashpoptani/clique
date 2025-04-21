@@ -1,0 +1,63 @@
+{
+    "components": [
+        "testBench"
+    ],
+    "flags": [
+        20,
+        20
+    ],
+    "hash": "e4432bbfde8a4c715e1612248756a555fd02d405f8828cb784cfa0eb7e54c5f5",
+    "dependencies": {
+        "transitive": []
+    },
+    "version": "unstable",
+    "files": [
+        {
+            "name": "BoolLogicClique_testBench_types.vhdl",
+            "sha256": "841298059c9158572a8d70c256cf896eac6924b80216f8258e56be2937047e3c"
+        },
+        {
+            "name": "testBench.vhdl",
+            "sha256": "ded65ade83db2fce9f6625f4f28f1759decb3ac6d1730a336578c4593d19cf29"
+        },
+        {
+            "name": "testBench_slv2string_FD7FE0FDE5409B5E.vhdl",
+            "sha256": "76ad6e6a41f26803fce0edeea54f88c878437b1a39bfb81fff18923737be7966"
+        }
+    ],
+    "top_component": {
+        "ports_flat": [
+            {
+                "direction": "out",
+                "width": 1,
+                "name": "result",
+                "is_clock": false,
+                "type_name": "boolean"
+            }
+        ],
+        "name": "testBench"
+    },
+    "domains": {
+        "System": {
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_kind": "Asynchronous",
+            "active_edge": "Rising",
+            "reset_polarity": "ActiveHigh"
+        },
+        "XilinxSystem": {
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_kind": "Synchronous",
+            "active_edge": "Rising",
+            "reset_polarity": "ActiveHigh"
+        },
+        "IntelSystem": {
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_kind": "Asynchronous",
+            "active_edge": "Rising",
+            "reset_polarity": "ActiveHigh"
+        }
+    }
+}
