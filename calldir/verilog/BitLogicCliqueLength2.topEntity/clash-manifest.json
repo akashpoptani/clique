@@ -1,0 +1,213 @@
+{
+    "components": [
+        "topEntity"
+    ],
+    "flags": [
+        20,
+        20
+    ],
+    "hash": "7f0e174236859e63bb359cf130c2b1eb08126f97456ebf5342a264d6891c922a",
+    "dependencies": {
+        "transitive": []
+    },
+    "version": "unstable",
+    "files": [
+        {
+            "name": "topEntity_shim.cpp",
+            "sha256": "460702d8afc7479b65dad3acb826f56baf7e34f11fea519fb6f597a0c8340150"
+        },
+        {
+            "name": "topEntity.sdc",
+            "sha256": "13d4c1aafcc09a84d81d3b60d513cb901384a10e27e5a5a16572a600f15895f3"
+        },
+        {
+            "name": "topEntity.v",
+            "sha256": "ec823e16cb4bb972b31364421dfda771498452c9805a8ba7ac2b83dc6d12dec5"
+        }
+    ],
+    "top_component": {
+        "ports_flat": [
+            {
+                "direction": "in",
+                "domain": "System",
+                "width": 1,
+                "name": "clk",
+                "is_clock": true,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "domain": "System",
+                "width": 1,
+                "name": "rst",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "domain": "System",
+                "width": 1,
+                "name": "en",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "width": 1,
+                "name": "c$arg_0",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "width": 1,
+                "name": "c$arg_1",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "width": 1,
+                "name": "c$arg_2",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "width": 1,
+                "name": "c$arg_3",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "width": 1,
+                "name": "c$arg_4",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "width": 1,
+                "name": "c$arg_5",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "width": 1,
+                "name": "c$arg_6",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "width": 1,
+                "name": "c$arg_7",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "width": 1,
+                "name": "c$arg_8",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "width": 1,
+                "name": "c$arg_9",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "width": 1,
+                "name": "c$arg_10",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "width": 1,
+                "name": "c$arg_11",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "width": 1,
+                "name": "c$arg_12",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "width": 1,
+                "name": "result_0",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "width": 1,
+                "name": "result_1",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "width": 1,
+                "name": "result_2",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "width": 1,
+                "name": "result_3",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "width": 1,
+                "name": "result_4",
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "width": 1,
+                "name": "result_5",
+                "is_clock": false,
+                "type_name": ""
+            }
+        ],
+        "name": "topEntity"
+    },
+    "domains": {
+        "System": {
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_kind": "Asynchronous",
+            "active_edge": "Rising",
+            "reset_polarity": "ActiveHigh"
+        },
+        "XilinxSystem": {
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_kind": "Synchronous",
+            "active_edge": "Rising",
+            "reset_polarity": "ActiveHigh"
+        },
+        "IntelSystem": {
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_kind": "Asynchronous",
+            "active_edge": "Rising",
+            "reset_polarity": "ActiveHigh"
+        }
+    }
+}
