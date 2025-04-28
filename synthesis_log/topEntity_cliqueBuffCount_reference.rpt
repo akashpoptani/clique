@@ -1,0 +1,38 @@
+ 
+****************************************
+Report : reference
+Design : topEntity
+Version: V-2023.12-SP5
+Date   : Tue Apr 22 00:24:49 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+DFFRPQ_X1M_A12TR   sc12_base_v31_rvt_soi12s0_ffl_nominal_min_1p10v_125c_mns     5.746000       3    17.237999 n
+DFFSQ_X1M_A12TR    sc12_base_v31_rvt_soi12s0_ffl_nominal_min_1p10v_125c_mns     5.746000       1     5.746000 n
+INV_X0P5B_A12TR    sc12_base_v31_rvt_soi12s0_ffl_nominal_min_1p10v_125c_mns     0.638400       5     3.192000
+INV_X1M_A12TR      sc12_base_v31_rvt_soi12s0_ffl_nominal_min_1p10v_125c_mns     0.638400       1     0.638400
+MXIT2_X0P5M_A12TR  sc12_base_v31_rvt_soi12s0_ffl_nominal_min_1p10v_125c_mns     2.234000       3     6.702000
+NAND2B_X0P5M_A12TR sc12_base_v31_rvt_soi12s0_ffl_nominal_min_1p10v_125c_mns     1.277000       1     1.277000
+NAND2_X0P5A_A12TR  sc12_base_v31_rvt_soi12s0_ffl_nominal_min_1p10v_125c_mns     0.957600       1     0.957600
+NAND2_X1A_A12TR    sc12_base_v31_rvt_soi12s0_ffl_nominal_min_1p10v_125c_mns     0.957600       1     0.957600
+NAND3_X1M_A12TR    sc12_base_v31_rvt_soi12s0_ffl_nominal_min_1p10v_125c_mns     1.277000       1     1.277000
+NOR2B_X2M_A12TR    sc12_base_v31_rvt_soi12s0_ffl_nominal_min_1p10v_125c_mns     1.915000       4     7.660000
+NOR2_X0P5A_A12TR   sc12_base_v31_rvt_soi12s0_ffl_nominal_min_1p10v_125c_mns     0.957600       1     0.957600
+NOR3_X2M_A12TR     sc12_base_v31_rvt_soi12s0_ffl_nominal_min_1p10v_125c_mns     2.234000       1     2.234000
+XNOR3_X0P5M_A12TR  sc12_base_v31_rvt_soi12s0_ffl_nominal_min_1p10v_125c_mns     4.788000       1     4.788000
+XOR2_X0P5M_A12TR   sc12_base_v31_rvt_soi12s0_ffl_nominal_min_1p10v_125c_mns     2.554000       2     5.108000
+-----------------------------------------------------------------------------
+Total 14 references                                    58.733199
+1

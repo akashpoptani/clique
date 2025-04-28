@@ -1,0 +1,23 @@
+ 
+****************************************
+Report : resources
+Design : topEntity
+Version: V-2023.12-SP5
+Date   : Tue Apr 22 00:25:00 2025
+****************************************
+
+Resource Sharing Report for design topEntity in file
+        /home/akashpt/clique/calldir/verilog/BitLogicCliqueLength2.topEntity/topEntity.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r65      | DW01_inc     | width=2    |               | add_113_aco          |
+| r67      | DW02_mult    | A_width=2  |               | mult_add_113_aco     |
+|          |              | B_width=1  |               |                      |
+===============================================================================
+
+
+No implementations to report
+1

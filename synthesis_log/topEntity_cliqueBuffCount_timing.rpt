@@ -1,0 +1,220 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -max_paths 100
+        -transition_time
+Design : topEntity
+Version: V-2023.12-SP5
+Date   : Tue Apr 22 00:24:47 2025
+****************************************
+
+Operating Conditions: ffl_nominal_min_1p10v_125c   Library: sc12_base_v31_rvt_soi12s0_ffl_nominal_min_1p10v_125c_mns
+Wire Load Model Mode: top
+
+  Startpoint: c$arg_0 (input port)
+  Endpoint: result_4 (output port)
+  Path Group: (none)
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes
+  ------------------------------------------------------------------------------------------
+  input external delay                               0.00       0.00 r
+  c$arg_0 (in)                             0.00      0.00       0.00 r
+  c$arg_0 (net)                  2                   0.00       0.00 r
+  U39/C (XNOR3_X0P5M_A12TR)                0.00      0.00       0.00 r
+  U39/Y (XNOR3_X0P5M_A12TR)                0.02      0.04       0.04 r
+  n23 (net)                      2                   0.00       0.04 r
+  U25/B (NAND2_X1A_A12TR)                  0.02      0.00       0.04 r
+  U25/Y (NAND2_X1A_A12TR)                  0.01      0.01       0.04 f
+  n21 (net)                      3                   0.00       0.04 f
+  U24/A (INV_X1M_A12TR)                    0.01      0.00       0.04 f
+  U24/Y (INV_X1M_A12TR)                    0.17      0.09       0.14 r
+  result_4 (net)                 1                   0.00       0.14 r
+  result_4 (out)                           0.17      0.00       0.14 r
+  data arrival time                                             0.14
+  ------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: c$arg_0 (input port)
+  Endpoint: result_0 (output port)
+  Path Group: (none)
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes
+  ------------------------------------------------------------------------------------------
+  input external delay                               0.00       0.00 f
+  c$arg_0 (in)                             0.00      0.00       0.00 f
+  c$arg_0 (net)                  2                   0.00       0.00 f
+  U39/C (XNOR3_X0P5M_A12TR)                0.00      0.00       0.00 f
+  U39/Y (XNOR3_X0P5M_A12TR)                0.02      0.04       0.04 f
+  n23 (net)                      2                   0.00       0.04 f
+  U30/AN (NAND2B_X0P5M_A12TR)              0.02      0.00       0.04 f
+  U30/Y (NAND2B_X0P5M_A12TR)               0.04      0.03       0.07 f
+  n22 (net)                      4                   0.00       0.07 f
+  U22/B (NOR2B_X2M_A12TR)                  0.04      0.00       0.07 f
+  U22/Y (NOR2B_X2M_A12TR)                  0.11      0.06       0.13 r
+  result_0 (net)                 1                   0.00       0.13 r
+  result_0 (out)                           0.11      0.00       0.13 r
+  data arrival time                                             0.13
+  ------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: c$arg_0 (input port)
+  Endpoint: result_1 (output port)
+  Path Group: (none)
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes
+  ------------------------------------------------------------------------------------------
+  input external delay                               0.00       0.00 f
+  c$arg_0 (in)                             0.00      0.00       0.00 f
+  c$arg_0 (net)                  2                   0.00       0.00 f
+  U39/C (XNOR3_X0P5M_A12TR)                0.00      0.00       0.00 f
+  U39/Y (XNOR3_X0P5M_A12TR)                0.02      0.04       0.04 f
+  n23 (net)                      2                   0.00       0.04 f
+  U30/AN (NAND2B_X0P5M_A12TR)              0.02      0.00       0.04 f
+  U30/Y (NAND2B_X0P5M_A12TR)               0.04      0.03       0.07 f
+  n22 (net)                      4                   0.00       0.07 f
+  U23/B (NOR2B_X2M_A12TR)                  0.04      0.00       0.07 f
+  U23/Y (NOR2B_X2M_A12TR)                  0.11      0.06       0.13 r
+  result_1 (net)                 1                   0.00       0.13 r
+  result_1 (out)                           0.11      0.00       0.13 r
+  data arrival time                                             0.13
+  ------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: c$arg_0 (input port)
+  Endpoint: result_2 (output port)
+  Path Group: (none)
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes
+  ------------------------------------------------------------------------------------------
+  input external delay                               0.00       0.00 f
+  c$arg_0 (in)                             0.00      0.00       0.00 f
+  c$arg_0 (net)                  2                   0.00       0.00 f
+  U39/C (XNOR3_X0P5M_A12TR)                0.00      0.00       0.00 f
+  U39/Y (XNOR3_X0P5M_A12TR)                0.02      0.04       0.04 f
+  n23 (net)                      2                   0.00       0.04 f
+  U30/AN (NAND2B_X0P5M_A12TR)              0.02      0.00       0.04 f
+  U30/Y (NAND2B_X0P5M_A12TR)               0.04      0.03       0.07 f
+  n22 (net)                      4                   0.00       0.07 f
+  U26/B (NOR2B_X2M_A12TR)                  0.04      0.00       0.07 f
+  U26/Y (NOR2B_X2M_A12TR)                  0.11      0.06       0.13 r
+  result_2 (net)                 1                   0.00       0.13 r
+  result_2 (out)                           0.11      0.00       0.13 r
+  data arrival time                                             0.13
+  ------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: c$arg_0 (input port)
+  Endpoint: result_3 (output port)
+  Path Group: (none)
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes
+  ------------------------------------------------------------------------------------------
+  input external delay                               0.00       0.00 f
+  c$arg_0 (in)                             0.00      0.00       0.00 f
+  c$arg_0 (net)                  2                   0.00       0.00 f
+  U39/C (XNOR3_X0P5M_A12TR)                0.00      0.00       0.00 f
+  U39/Y (XNOR3_X0P5M_A12TR)                0.02      0.04       0.04 f
+  n23 (net)                      2                   0.00       0.04 f
+  U30/AN (NAND2B_X0P5M_A12TR)              0.02      0.00       0.04 f
+  U30/Y (NAND2B_X0P5M_A12TR)               0.04      0.03       0.07 f
+  n22 (net)                      4                   0.00       0.07 f
+  U27/B (NOR2B_X2M_A12TR)                  0.04      0.00       0.07 f
+  U27/Y (NOR2B_X2M_A12TR)                  0.11      0.06       0.13 r
+  result_3 (net)                 1                   0.00       0.13 r
+  result_3 (out)                           0.11      0.00       0.13 r
+  data arrival time                                             0.13
+  ------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: c$arg_0 (input port)
+  Endpoint: result_5 (output port)
+  Path Group: (none)
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes
+  ------------------------------------------------------------------------------------------
+  input external delay                               0.00       0.00 f
+  c$arg_0 (in)                             0.00      0.00       0.00 f
+  c$arg_0 (net)                  2                   0.00       0.00 f
+  U39/C (XNOR3_X0P5M_A12TR)                0.00      0.00       0.00 f
+  U39/Y (XNOR3_X0P5M_A12TR)                0.02      0.04       0.04 f
+  n23 (net)                      2                   0.00       0.04 f
+  U25/B (NAND2_X1A_A12TR)                  0.02      0.00       0.04 f
+  U25/Y (NAND2_X1A_A12TR)                  0.02      0.01       0.05 r
+  n21 (net)                      3                   0.00       0.05 r
+  U29/C (NAND3_X1M_A12TR)                  0.02      0.00       0.05 r
+  U29/Y (NAND3_X1M_A12TR)                  0.01      0.01       0.05 f
+  n16 (net)                      1                   0.00       0.05 f
+  U28/A (NOR3_X2M_A12TR)                   0.01      0.00       0.05 f
+  U28/Y (NOR3_X2M_A12TR)                   0.14      0.07       0.12 r
+  result_5 (net)                 1                   0.00       0.12 r
+  result_5 (out)                           0.14      0.00       0.12 r
+  data arrival time                                             0.12
+  ------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : area
+Design : topEntity
+Version: V-2023.12-SP5
+Date   : Tue Apr 22 00:24:47 2025
+****************************************
+
+Library(s) Used:
+
+    sc12_base_v31_rvt_soi12s0_ffl_nominal_min_1p10v_125c_mns (File: /afs/eecs.umich.edu/kits/ARM/IBM_soi12s0/sc12_rvt/db/sc12_base_v31_rvt_soi12s0_ffl_nominal_min_1p10v_125c_mns.db)
+
+Number of ports:                           14
+Number of nets:                            34
+Number of cells:                           26
+Number of combinational cells:             22
+Number of sequential cells:                 4
+Number of macros/black boxes:               0
+Number of buf/inv:                          6
+Number of references:                      14
+
+Combinational area:                 35.749200
+Buf/Inv area:                        3.830400
+Noncombinational area:              22.983999
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                    58.733199
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+topEntity                           58.7332    100.0   35.7492    22.9840  0.0000  topEntity
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                  35.7492    22.9840  0.0000
+
+1
